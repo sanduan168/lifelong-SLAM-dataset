@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="use_sim_time" value="true" />
+
+    <node name="map_server" pkg="map_server" type="map_server"
+          args="*/map.yaml" respawn="false"
+          output="screen">
+        <param name="frame_id" value="map"/>
+    </node>
+  <node pkg="rviz" name="rviz" type="rviz"/>
+</launch>

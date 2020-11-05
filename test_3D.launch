@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="use_sim_time" value="true" />
+  <node name="republish_camera" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera/rgb/image_raw raw out:=/camera/rgb/image_raw" />
+  <!-- <node name="haloc" pkg="haloc" type="haloc" output="screen">
+        <param name="config_file" type="string" value="$(find haloc)/params/config.yaml" />
+  </node> -->
+  <node name="rviz" pkg="rviz" type="rviz"/>
+  <include file="$(find rslidar_pointcloud)/launch/demo_cloud_node.launch" />
+
+</launch>
