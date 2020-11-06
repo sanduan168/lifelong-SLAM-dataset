@@ -2,7 +2,7 @@
 This is the open LiDAR dataset for lifelong SLAM, please refer to the following paper: `A General Framework for Lifelong Localization and Mapping in Changing Environment.`
 
 # Requirements
-To dataset is recorded by ROS recoder, and tested by the following ROS version:
+The dataset is recorded by ROS recoder, and tested by the following ROS version:
 - indigo
 - kinetic
 - melodic
@@ -65,4 +65,4 @@ rosbag play *.bag --clock
 ```
 
 # Acknowledgements
-we will upload our new data collected from our robots in real world timelessly! ^_^
+We will upload our new data collected from our robots in real world timelessly! ^_^
